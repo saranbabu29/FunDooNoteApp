@@ -1,0 +1,16 @@
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.deps.json
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.json
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.dev.json
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.AssemblyReference.cache
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CopyComplete
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.genruntimeconfig.cache
