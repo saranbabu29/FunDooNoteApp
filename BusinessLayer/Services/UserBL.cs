@@ -45,6 +45,19 @@ namespace BusinessLayer.Services
             throw new NotImplementedException();
             
         }
+        public string Forgot(string email)
+        {
+            try
+            {
+                return iuserRL.Forgot(email);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            throw new NotImplementedException();
+        }
         
     }
 }

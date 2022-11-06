@@ -69,5 +69,31 @@ namespace FunDooNoteProject.Controllers
                 throw;
             }
         }
+        [HttpPost]
+        [Route("Forgot")]
+        public IActionResult ForgotPassword(UserLogin userLogin)
+        {
+            try
+            {
+                var result = iuserBL.Login(userLogin);
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "Email sent Successfully", data = result });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        success = false,
+                        message = "email not sent"
+                    });
+                }
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

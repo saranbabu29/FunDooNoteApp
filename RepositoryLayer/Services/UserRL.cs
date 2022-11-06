@@ -89,6 +89,30 @@ namespace RepositoryLayer.Services
             return tokenHandler.WriteToken(token);
 
         }
+        public string Forgot(string email )
+        {
+            try
+            {
+                var emailCheck=fundooContext.userTable.FirstOrDefault(x => x.Email == email);
+                if(emailCheck != null)
+                {
+                    var token = GenerateSecurityToken(emailCheck.Email, emailCheck.UserId);
+                    MSMQmodel msmqmodel = new MSMQmodel();
+                    msmqmodel.sendData2Queue(token);
+                    return token.ToString();
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
     }
 }

@@ -44,11 +44,10 @@ D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\obj\Debug\
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\obj\Debug\netcoreapp3.1\FunDooNoteProject.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\obj\Debug\netcoreapp3.1\FunDooNoteProject.pdb
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\obj\Debug\netcoreapp3.1\FunDooNoteProject.genruntimeconfig.cache
-D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Experimental.System.Messaging.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\System.Text.Json.dll
