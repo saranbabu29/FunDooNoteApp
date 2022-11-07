@@ -1,8 +1,10 @@
 ﻿using BusinessLayer.Interface;
 using CommonLayer.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Security.Claims;
 
 namespace FunDooNoteProject.Controllers
 {
@@ -71,11 +73,11 @@ namespace FunDooNoteProject.Controllers
         }
         [HttpPost]
         [Route("Forgot")]
-        public IActionResult ForgotPassword(UserLogin userLogin)
+        public IActionResult ForgotPassword(string Email)
         {
             try
             {
-                var result = iuserBL.Login(userLogin);
+                var result = iuserBL.Forgot(Email);
                 if (result != null)
                 {
                     return Ok(new { success = true, message = "Email sent Successfully", data = result });
@@ -95,5 +97,34 @@ namespace FunDooNoteProject.Controllers
                 throw;
             }
         }
+        [Authorize]
+            [HttpPost]
+            [Route("Reset")]
+            public IActionResult Reset(string password, string ConfirmPassword)
+            {
+                try
+                {
+                    var Email = User.FindFirst(ClaimTypes.Email).Value.ToString();
+                    var result = iuserBL.Reset(Email, password, ConfirmPassword);
+
+                    if (result != null)
+                    {
+                        return Ok(new { success = true, message = "Password change Successfully", data = result });
+                    }
+                    else
+                    {
+                        return BadRequest(new
+                        {
+                            success = false,
+                            message = "Password did not Reset"
+                        });
+                    }
+                }
+                catch (System.Exception)
+                {
+
+                    throw;
+                }
+            }
+        }
     }
-}

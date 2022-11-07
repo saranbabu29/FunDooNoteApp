@@ -49,7 +49,7 @@ namespace CommonLayer.Model
             var SMTP = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("saranbabue2905@gmail.com", "dtdcfyngmyjudcts"),
+                Credentials = new NetworkCredential("saranbabue2905@gmail.com", "lssvarqlcddrjety"),
                 EnableSsl = true,
             };
             SMTP.Send(mail);

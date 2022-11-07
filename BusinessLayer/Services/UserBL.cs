@@ -58,6 +58,18 @@ namespace BusinessLayer.Services
             }
             throw new NotImplementedException();
         }
-        
+        public bool Reset(string email, string Password, string ConfirmPassword)
+        {
+            try
+            {
+                return iuserRL.Reset(email, Password, ConfirmPassword);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            throw new NotImplementedException();
+        }
     }
 }
