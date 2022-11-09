@@ -40,6 +40,8 @@ namespace FunDooNoteProject
             services.AddControllers();
             services.AddTransient<IUserRL,UserRL>();
             services.AddTransient<IUserBL, UserBL>();
+            services.AddTransient<INoteRL, NoteRL>();
+            services.AddTransient<INoteBL, NoteBL>();
             services.AddSwaggerGen();
 
 
