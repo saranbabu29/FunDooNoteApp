@@ -60,3 +60,4 @@ D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\obj\Debug\netcoreapp3.1\FunDooNoteProject.MvcApplicationPartsAssemblyInfo.cs
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

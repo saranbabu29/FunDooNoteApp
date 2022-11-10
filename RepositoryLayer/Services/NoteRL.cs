@@ -1,4 +1,7 @@
-﻿using CommonLayer.Model;
+﻿using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
+using CommonLayer.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
@@ -6,7 +9,9 @@ using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 
 namespace RepositoryLayer.Services
@@ -89,7 +94,172 @@ namespace RepositoryLayer.Services
                 throw;
             }
         }
-        
+        public NoteEntity UpdateNote(AddNoteModel addNoteModel,long UserId, long NoteId)
+        {
+            try
+            {
+                var result = this.fundooContext.noteTable.Where(x => x.UserId == UserId && x.NoteId == NoteId).FirstOrDefault();
+                if (result != null)
+                {
+                    result.Title = addNoteModel.Title;
+                    result.Description = addNoteModel.Description;
+                    result.Reminder = addNoteModel.Reminder;
+                    result.Colour = addNoteModel.Colour;
+                    result.Image = addNoteModel.Image;
+                    fundooContext.noteTable.Remove(result);
+                    this.fundooContext.SaveChanges();
+                    return result;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public bool PinNote(long UserId, long NoteId)
+        {
+            try
+            {
+                var result = this.fundooContext.noteTable.Where(x => x.UserId == UserId && x.NoteId == NoteId).FirstOrDefault();
+                if (result.Pin == true)
+                {
+                    result.Pin = false;
+                    fundooContext.SaveChanges();
+                    return false;
+                }
+                else
+                {
+                    result.Pin = true;
+                    fundooContext.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public bool ArchieveNote(long UserId, long NoteId)
+        {
+            try
+            {
+                var result = this.fundooContext.noteTable.Where(x => x.UserId == UserId && x.NoteId == NoteId).FirstOrDefault();
+                if (result.Archieve == true)
+                {
+                    result.Archieve = false;
+                    fundooContext.SaveChanges();
+                    return false;
+                }
+                else
+                {
+                    result.Archieve = true;
+                    fundooContext.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public bool TrashNote(long UserId, long NoteId)
+        {
+            try
+            {
+                var result = this.fundooContext.noteTable.Where(x => x.UserId == UserId && x.NoteId == NoteId).FirstOrDefault();
+                if (result.Trash == true)
+                {
+                    result.Trash = false;
+                    fundooContext.SaveChanges();
+                    return false;
+                }
+                else
+                {
+                    result.Trash = true;
+                    fundooContext.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public NoteEntity NoteColour(string colour, long NoteId)
+        {
+            try
+            {
+                var result = this.fundooContext.noteTable.Where(x => x.NoteId == NoteId).FirstOrDefault();
+                if(result != null)
+                {
+                    if (colour != null)
+                    {
+                        result.Colour = colour;
+                        fundooContext.noteTable.Update(result);
+                        fundooContext.SaveChanges();
+                        return result;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else
+                {
+                    return null;
+                }
+                
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public string AddImage(IFormFile Image, long NoteId, long UserId)
+        {
+            try
+            {
+                var result = this.fundooContext.noteTable.Where(x => x.UserId == UserId && x.NoteId == NoteId).FirstOrDefault();
+                if(result != null)
+                {
+                    Account account = new Account(
+                        this.config["CloudinaryAccount:CloudName"],
+                        this.config["CloudinaryAccount:APIKey"],
+                        this.config["CloudinaryAccount:APISecret"]);
+                    Cloudinary cloudinary = new Cloudinary(account);
+                    var UploadParameters = new ImageUploadParams()
+                    {
+                        File = new FileDescription(Image.FileName, Image.OpenReadStream()),
+                    };
+                    var UploadResult = cloudinary.Upload(UploadParameters);
+                    string ImagePath = UploadResult.Url.ToString();
+                    result.Image = ImagePath;
+                    fundooContext.SaveChanges();
+                    return "Image Uploaded Successfully";
+
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
    
 }
