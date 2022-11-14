@@ -61,3 +61,12 @@ D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\obj\Debug\netcoreapp3.1\FunDooNoteProject.MvcApplicationPartsAssemblyInfo.cs
 D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\NLog.config
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\NLog.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\Class\Bridgelabz\FunDooNoteApp\FunDooNoteProject\FunDooNoteProject\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

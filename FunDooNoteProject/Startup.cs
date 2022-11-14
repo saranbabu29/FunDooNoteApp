@@ -44,6 +44,8 @@ namespace FunDooNoteProject
             services.AddTransient<INoteBL, NoteBL>();
             services.AddTransient<ILabelRL, LabelRL>();
             services.AddTransient<ILabelBL, LabelBL>();
+            services.AddTransient<ICollabratorRL, CollabratorRL>();
+            services.AddTransient<ICollabratorBL, CollabratorBL>();
             services.AddSwaggerGen();
 
 
@@ -90,6 +92,19 @@ namespace FunDooNoteProject
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:key"])) //Configuration["JwtToken:SecretKey"]
                 };
             });
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "localhost:6379";
+            });
+            services.AddMemoryCache();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(
+                name: "AllowOrigin",
+                  builder => {
+                      builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                  });
+            });
 
         }
 
@@ -104,6 +119,7 @@ namespace FunDooNoteProject
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors("AllowOrigin");
             app.UseAuthentication();
 
             app.UseAuthorization();
